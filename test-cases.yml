@@ -104,6 +104,6 @@
   test-data: |
      Not data
   steps:
-    - Нажат previous 
+    - Нажать previous 
   expected-result: |
    Открывается предыдущую страница каталога товаров
