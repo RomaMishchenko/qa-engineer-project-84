@@ -107,3 +107,30 @@
     - Нажать previous 
   expected-result: |
    Открывается предыдущую страница каталога товаров
+
+   - summary: |
+   Проверка перевода шапки сайта на русский язык
+  requirement: |
+   Шапка сайта переводится на русский язык
+  prerequisites: |
+    Открыта главная страница магазина Hexlet Store
+  test-data: |
+     Language = Russian
+  steps:
+    - Нажать Russian
+  expected-result: |
+  Шапка сайта переводится на русский язык 
+
+   - summary: |
+   Проверка перевода Category на русский язык
+  requirement: |
+   Category  переводится на русский язык
+  prerequisites: |
+    Открыта главная страница магазина Hexlet Store
+  test-data: |
+     Language = Russian
+  steps:
+    - Нажать Russian
+  expected-result: |
+   Category не переводится на русский язык 
+
