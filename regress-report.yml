@@ -28,4 +28,4 @@ test-cases:
       При нажатие Hexlet Store переходи на главную страницу 
     status: pass
 
-     bugreports: []
+    bugreports: []
