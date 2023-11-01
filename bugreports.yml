@@ -1,1 +1,90 @@
-
+---
+- summary: |
+    Нет возможности указать кол-во товара 
+  environment: >
+    Yandex browser 23.9.3.933 (Официальная сборка) (64-bit) Windows 11
+    Версия  22H2 ОС 22621.2428
+  steps-to-reproduce: |
+    Открыть https://hexlet-products-store.vercel.app/
+    Добавить 4 товара в корзину 
+    Перейти в корзину 
+  expected-result: |
+    В корзине появится 4 товара  
+  actual-result: |
+    Невозможно указать кол-во товара цифрой 
+- summary: |
+    Локализация не проработана каректно 
+  environment: >
+    Yandex browser 23.9.3.933 (Официальная сборка) (64-bit) Windows 11
+    Версия  22H2 ОС 22621.2428
+  steps-to-reproduce: |
+    Открыть https://hexlet-products-store.vercel.app/
+    Нажать Language
+    Выбрать я язык 
+  expected-result: |
+    Страница переводится 
+  actual-result: >
+    Данные не переводятся на русский язык (хэштег с категорией на
+    странице товара и размер скидки на странице товара)
+- summary: |
+    Отсутствует мобильная адаптация сайта
+  environment: |
+    Яндекс старт 230906023 (Официальная сборка) 
+    Android 13; A225FXXU7DWH3
+  steps-to-reproduce: |
+    Открыть https://hexlet-products-store.vercel.app/ на смартфоне 
+  expected-result: |
+    Открывается мобильная версия сайта   
+  actual-result: >
+    Вёрстка сайта не адаптирована, текст выходит за пределы блоков
+    кнопки переключения накладываются на поиск товаров  
+- summary: >
+    Не ровная верстка кол-во товара в корзине  при разной длине
+    наименования товара 
+  environment: >
+    Yandex browser 23.9.3.933 (Официальная сборка) (64-bit) Windows 11
+    Версия  22H2 ОС 22621.2428
+  steps-to-reproduce: |
+    Открыть https://hexlet-products-store.vercel.app/
+    Добавить несколько товара в корзину с разными названиями 
+    Перейти в корзину 
+  expected-result: |
+    В корзине появится таблица с товарами 
+  actual-result: |
+    Кол-во товаров в таблице не ровное 
+- summary: |
+    Невозможно фильтровать товар по цене со скидкой 
+  environment: >
+    Yandex browser 23.9.3.933 (Официальная сборка) (64-bit) Windows 11
+    Версия  22H2 ОС 22621.2428
+  steps-to-reproduce: |
+    Открыть https://hexlet-products-store.vercel.app/
+    Вставить в фильтр по цене 968.99 - 968.99
+  expected-result: |
+    Должен появится товар Infinix INBOOK  
+  actual-result: |
+    Открывается страница Nothing found!
+- summary: |
+    Невозможно поставить оценку товару 
+  environment: >
+    Yandex browser 23.9.3.933 (Официальная сборка) (64-bit) Windows 11
+    Версия  22H2 ОС 22621.2428
+  steps-to-reproduce: |
+    Открыть https://hexlet-products-store.vercel.app/
+    Открыть страницу товара
+  expected-result: |
+    Нажать на оценку товара должна появится функция оценивания 
+  actual-result: |
+    Кнопка оценки не нажимается 
+- summary: |
+    Невозможно переключать изображения товара
+  environment: >
+    Yandex browser 23.9.3.933 (Официальная сборка) (64-bit) Windows 11
+    Версия  22H2 ОС 22621.2428
+  steps-to-reproduce: |
+    Открыть https://hexlet-products-store.vercel.app/
+    Открыть страницу товара
+  expected-result: |
+    Нажать на другое изображения товара 
+  actual-result: |
+    Первое изображение не меняется 
