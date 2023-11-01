@@ -3,31 +3,24 @@ test-cases:
   - summary: |
       Проверка локализации
     status: fail
- 
   - summary: |
       Возможность указать кол-во товаров 
     status: fail
-  
   - summary: |
       Есть мобильная версия главной страницы сайта 
     status: pass
-  
   - summary: |
       Фильтрация товар по цене со скидкой
     status: fail
- 
   - summary: |
       Поставить оценку товару 
     status: fail
-  
   - summary: |
       Поставить оценку товару 
     status: pass
-  
   - summary: |
       При нажатие Hexlet Store переходи на главную страницу 
     status: pass
-
 bugreports:
   - summary: |
       Неровная вёрстка в корзине мобильной версии
@@ -40,3 +33,4 @@ bugreports:
       Верстка цифр кол-во товаров должна быть ровной
     actual-result: |
       Верстка цифр кол-во товаров неровная
+
