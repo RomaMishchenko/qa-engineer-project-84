@@ -28,16 +28,4 @@ test-cases:
       При нажатие Hexlet Store переходи на главную страницу 
     status: pass
 
-bugreports:
-- summary: |  
-    Неровная вёрстка в корзине мобильной версии
-  environment: |
-    Яндекс старт 230906023 (Официальная сборка) 
-    Android 13; A225FXXU7DWH3
-  steps-to-reproduce: |
-    1. Открыть на мобильном устройстве https://hexlet-products-store.vercel.app/
-    2. Перейти в корзину
-  expected-result: |
-    Верстка цифр кол-во товаров должна быть ровной
-  actual-result: |
-    Верстка цифр кол-во товаров неровная
+     bugreports: []
