@@ -21,7 +21,7 @@
   steps-to-reproduce: |
     Открыть https://hexlet-products-store.vercel.app/
     Нажать Language
-    Выбрать я язык 
+    Выбрать язык 
   expected-result: |
     Страница переводится 
   actual-result: >
