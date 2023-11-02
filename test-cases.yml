@@ -52,8 +52,7 @@
   requirement: |
     При вводе ключевого слова в поиске выдаётся товар с этим словом 
   prerequisites: >
-    - Переходим мобильном устройстве по ссылке
-    https://hexlet-products-store.vercel.app/
+    - Переходим мобильном устройстве по ссылке https://hexlet-products-store.vercel.app/
   test-data: |
     Конопка ключевое слово Samsung
   steps:
@@ -66,8 +65,7 @@
   requirement: |
     При вводе ключевого слова в поиске выдаётся товар с этим словом 
   prerequisites: >
-    - Переходим мобильном устройстве по ссылке
-    https://hexlet-products-store.vercel.app/
+    - Переходим мобильном устройстве по ссылке https://hexlet-products-store.vercel.app/
   test-data: |
     Конопка ключевое слово MSI
   steps:
@@ -80,8 +78,7 @@
   requirement: |
     На главной странице в каталоге отображаются товары 
   prerequisites: >
-    - Переходим мобильном устройстве по ссылке
-    https://hexlet-products-store.vercel.app/
+    - Переходим мобильном устройстве по ссылке https://hexlet-products-store.vercel.app/
   test-data: |
     empty
   steps:
@@ -95,8 +92,7 @@
   requirement: |
     Можно перейти на следующую страницу каталога
   prerequisites: >
-    - Переходим мобильном устройстве по ссылке
-    https://hexlet-products-store.vercel.app/
+    - Переходим мобильном устройстве по ссылке https://hexlet-products-store.vercel.app/
   test-data: |
     empty
   steps:
@@ -109,8 +105,7 @@
   requirement: |
     Можно перейти на предыдущую страницу каталога
   prerequisites: >
-    - Переходим мобильном устройстве по ссылке
-    https://hexlet-products-store.vercel.app/
+    - Переходим мобильном устройстве по ссылке https://hexlet-products-store.vercel.app/
   test-data: |
     empty
   steps:
@@ -125,8 +120,7 @@
   prerequisites: |
     empty
   test-data: |
-    Сайт = https://hexlet-products-store.vercel.app/
-    Google Chrome = Google Chrome Version 120.0.6099.4
+    Сайт = https://hexlet-products-store.vercel.app/ Google Chrome = Google Chrome Version 120.0.6099.4
   steps:
     - Открываем сайт в Google Chrome
     - Проверяем внешний вид страницы
@@ -140,8 +134,7 @@
   prerequisites: |
     empty
   test-data: |
-    Сайт = https://hexlet-products-store.vercel.app/
-    Mozila Firefox = Mozila Firefox 119.0
+    Сайт = https://hexlet-products-store.vercel.app/ Mozila Firefox = Mozila Firefox 119.0
   steps:
     - Открываем сайт в Mozila Firefox
     - Проверяем внешний вид страницы
@@ -155,8 +148,7 @@
   prerequisites: |
     empty
   test-data: |
-    Сайт = https://hexlet-products-store.vercel.app/
-    Vivaldi = Vivaldi 6.4
+    Сайт = https://hexlet-products-store.vercel.app/ Vivaldi = Vivaldi 6.4
   steps:
     - Открываем сайт в Vivaldi
     - Проверяем внешний вид страницы
@@ -170,8 +162,7 @@
   prerequisites: |
     empty
   test-data: |
-    Сайт = https://hexlet-products-store.vercel.app/
-    Opera  = Opera 104.0.4944.36
+    Сайт = https://hexlet-products-store.vercel.app/ Opera  = Opera 104.0.4944.36
   steps:
     - Открываем сайт в Opera
     - Проверяем внешний вид страницы
