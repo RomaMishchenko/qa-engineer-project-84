@@ -109,19 +109,6 @@
    Открывается предыдущую страница каталога товаров
 
 - summary: |
-   Проверка перевода шапки сайта на русский язык
-  requirement: |
-   Шапка сайта переводится на русский язык
-  prerequisites: |
-    Открыта главная страница магазина Hexlet Store
-  test-data: |
-     Language = Russian
-  steps:
-    - Нажать Russian
-  expected-result: |
-  Шапка сайта переводится на русский язык 
-
-- summary: |
     Проверка кроссбраузерности Google Chrome
   requirement: |
     Сайт корректно открывается в последней версии Google Chrome 
