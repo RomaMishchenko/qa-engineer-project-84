@@ -46,13 +46,26 @@
 
   bugreports:
   - summary: |
-      Вёрстка корзины 
+      Вёрстка кнопки Delete в корзине на мобильном устройстве
     environment: |
       Яндекс старт 230906023 (Официальная сборка) Android 13; A225FXXU7DWH3
-    steps-to-reproduce: >
+    steps-to-reproduce: |
       1. Открыть на мобильном устройстве https://hexlet-products-store.vercel.app/ 
       2. Перейти в корзину
     expected-result: |
       Кнопки Delete и ровные 
     actual-result: |
       Кнопки Кнопки Delete неровные
+
+      - summary: |
+      Вёрстка кнопки Delete в корзине 
+    environment: |
+     Yandex browser 23.9.3.933 (Официальная сборка) (64-bit) Windows 113
+    steps-to-reproduce: |
+      1. Открыть на мобильном устройстве https://hexlet-products-store.vercel.app/ 
+      2. Перейти в корзину
+    expected-result: |
+      Кнопки Delete и ровные 
+    actual-result: |
+      Кнопки Кнопки Delete неровные
+
