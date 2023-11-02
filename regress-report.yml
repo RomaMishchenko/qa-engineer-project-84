@@ -44,14 +44,14 @@
       Проверка кроссбраузерности Vivaldi
       status: pass
 
-bugreports:
+  bugreports:
   - summary: |
       Вёрстка корзины 
     environment: |
       Яндекс старт 230906023 (Официальная сборка) Android 13; A225FXXU7DWH3
     steps-to-reproduce: >
-      1. Открыть на мобильном устройстве
-      https://hexlet-products-store.vercel.app/ 2. Перейти в корзину
+      1. Открыть на мобильном устройстве https://hexlet-products-store.vercel.app/ 
+      2. Перейти в корзину
     expected-result: |
       Кнопки Delete и ровные 
     actual-result: |
