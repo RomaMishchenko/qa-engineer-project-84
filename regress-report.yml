@@ -32,15 +32,15 @@ test-cases:
       Проверка кроссбраузерности Google Chrome
     status: pass
 
-    - summary: |
+  - summary: |
       Проверка кроссбраузерности Mozila FireFox
     status: pass
 
-    - summary: |
+  - summary: |
       Проверка кроссбраузерности Opera
     status: pass
 
-   - summary: |
+  - summary: |
       Проверка кроссбраузерности Vivaldi
       status: pass
 
