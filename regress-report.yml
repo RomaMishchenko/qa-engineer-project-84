@@ -7,15 +7,15 @@ test-cases:
   - summary: |
       Возможность указать кол-во товаров 
     status: fail
- 
+  
   - summary: |
       Есть мобильная версия сайта
     status: pass
- 
+  
   - summary: |
       Фильтрация товар по цене со скидкой
     status: fail
- 
+  
   - summary: |
       Поставить оценку товару 
     status: fail
@@ -31,20 +31,19 @@ test-cases:
   - summary: |
       Проверка кроссбраузерности Google Chrome
     status: pass
-
+  
   - summary: |
       Проверка кроссбраузерности Mozila FireFox
     status: pass
-
+  
   - summary: |
       Проверка кроссбраузерности Opera
     status: pass
-
+  
   - summary: |
       Проверка кроссбраузерности Vivaldi
       status: pass
 
----
 bugreports:
   - summary: |
       Вёрстка корзины 
@@ -52,8 +51,7 @@ bugreports:
       Яндекс старт 230906023 (Официальная сборка) Android 13; A225FXXU7DWH3
     steps-to-reproduce: >
       1. Открыть на мобильном устройстве
-      https://hexlet-products-store.vercel.app/
-      2. Перейти в корзину
+      https://hexlet-products-store.vercel.app/ 2. Перейти в корзину
     expected-result: |
       Кнопки Delete и ровные 
     actual-result: |
