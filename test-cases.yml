@@ -48,7 +48,7 @@
   requirement: |
     При вводе ключевого слова в поиске выдаётся товар с этим словом 
   prerequisites: |
-    Открыта главная страница магазина Hexlet Store
+    - Переходим мобильном устройстве по ссылке https://hexlet-products-store.vercel.app/
   test-data: |
     Конопка ключевое слово Samsung
   steps:
@@ -61,7 +61,7 @@
   requirement: |
     При вводе ключевого слова в поиске выдаётся товар с этим словом 
   prerequisites: |
-    Открыта главная страница магазина Hexlet Store
+    - Переходим мобильном устройстве по ссылке https://hexlet-products-store.vercel.app/
   test-data: |
     Конопка ключевое слово MSI
   steps:
@@ -74,7 +74,7 @@
   requirement: |
     На главной странице в каталоге отображаются товары 
   prerequisites: |
-    Открыта главная страница магазина Hexlet Store
+   - Переходим мобильном устройстве по ссылке https://hexlet-products-store.vercel.app/
   test-data: |
      empty
   steps:
@@ -87,7 +87,7 @@
   requirement: |
     Можно перейти на следующую страницу каталога
   prerequisites: |
-    Открыта главная страница магазина Hexlet Store
+   - Переходим мобильном устройстве по ссылке https://hexlet-products-store.vercel.app/
   test-data: |
     empty
   steps:
@@ -100,7 +100,7 @@
   requirement: |
    Можно перейти на предыдущую страницу каталога
   prerequisites: |
-    Открыта главная страница магазина Hexlet Store
+   - Переходим мобильном устройстве по ссылке https://hexlet-products-store.vercel.app/
   test-data: |
      empty
   steps:
@@ -167,3 +167,53 @@
     - Проверяем внешний вид страницы
   expected-result: |
     Страница сайта адаптирована, текст не выходит за блоки
+
+- summary: |
+    Добавление товара в корзину 
+  requirement: |
+    Успешное добавление товара в корзину из каталога на главной странице
+  prerequisites: |
+    В браузере открыта страница https://hexlet-products-store.vercel.app/
+    Корзина пуста
+  test-data: |
+    Товар = Huawei P30
+  steps:
+    - Добавить товар в корзину
+    - Перейти в корзину
+  expected-result: |
+    В корзине отображается Huawei P30 в количестве 1 шт.
+
+- summary: |
+    Добавление нескольких товаров в корзину из каталога
+  requirement: |
+    Успешное добавление нескольких товаров в корзину из каталога на главной странице
+  prerequisites: |
+    В браузере открыта страница https://hexlet-products-store.vercel.app/
+    Корзина пуста
+  test-data: |
+    Товар = Samsung Galaxy Book
+  steps:
+    - Добавить товар в корзину 10 раз
+    - Перейти в корзину
+  expected-result: |
+    В корзине отображаетсяvSamsung Galaxy Book в количестве 10 шт.
+
+- summary: |
+    Добавление нескольких товаров из каталога в корзину с указанием количества
+  requirement: |
+    Успешное добавление нескольких товаров в корзину с указанием количества из каталога на главной странице
+  prerequisites: |
+    В браузере открыта страница https://hexlet-products-store.vercel.app/
+    Корзина пуста
+  test-data: |
+    Товар = iPhone X
+    Количество = 3
+  steps:
+    - Добавить товар
+    - Во всплывающем окне указать цифрой количество
+    - Перейти в корзину
+  expected-result: |
+    В корзине отображается выбранный товар в количестве 3 шт.
+
+
+    
