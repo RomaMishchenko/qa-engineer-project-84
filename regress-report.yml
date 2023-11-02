@@ -57,7 +57,7 @@
     actual-result: |
       Кнопки Кнопки Delete неровные
 
-      - summary: |
+  - summary: |
       Вёрстка кнопки Delete в корзине 
     environment: |
      Yandex browser 23.9.3.933 (Официальная сборка) (64-bit) Windows 113
