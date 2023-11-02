@@ -59,9 +59,9 @@ bugreports:
     steps-to-reproduce: |
       1. Открыть на мобильном устройстве https://hexlet-products-store.vercel.app/ 
       2. Перейти в корзину
-     expected-result: |
+    expected-result: |
       Кнопки Delete и ровные 
-     actual-result: |
+    actual-result: |
       Кнопки Кнопки Delete неровные
 
   - summary: |
