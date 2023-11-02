@@ -1,70 +1,77 @@
----
 test-cases:
-  - summary: |
-      Проверка локализации
-    status: fail
-  
-  - summary: |
-      Возможность указать кол-во товаров 
-    status: fail
-  
-  - summary: |
-      Есть мобильная версия сайта
-    status: pass
-  
-  - summary: |
-      Фильтрация товар по цене со скидкой
-    status: fail
-  
-  - summary: |
-      Поставить оценку товару 
-    status: fail
-  
-  - summary: |
-      Поставить оценку товару 
-    status: pass
-  
-  - summary: |
-      При нажатие Hexlet Store возвращение на главную страницу 
-    status: pass
-  
-  - summary: |
-      Проверка кроссбраузерности Google Chrome
-    status: pass
-  
-  - summary: |
-      Проверка кроссбраузерности Mozila FireFox
-    status: pass
-  
-  - summary: |
-      Проверка кроссбраузерности Opera
-    status: pass
-  
-  - summary: |
-      Проверка кроссбраузерности Vivaldi
-      status: pass
-      
-bugreports:
 - summary: |
-      Вёрстка кнопки Delete в корзине на мобильном устройстве
-environment: |
-      Яндекс старт 230906023 (Официальная сборка) Android 13; A225FXXU7DWH3
-steps-to-reproduce: |
-      1. Открыть на мобильном устройстве https://hexlet-products-store.vercel.app/ 
-      2. Перейти в корзину
-expected-result: |
-      Кнопки Delete и ровные 
-actual-result: |
-      Кнопки Кнопки Delete неровные
+     Проверка локализации 
+  status: fail
 
 - summary: |
-      Вёрстка кнопки Delete в корзине 
-environment: |
-     Yandex browser 23.9.3.933 (Официальная сборка) (64-bit) Windows 113
-steps-to-reproduce: |
+    Возможность указать цифрой кол-во товаров
+  status: fail
+  
+- summary: |
+    Есть мобильная версия сайта
+  status: pass  
+    
+- summary: |
+    Упешное добавление товара в корзину
+  status: pass
+    
+- summary: |
+    Фильтрация товар по цене со скидкой
+  status: fail
+    
+- summary: |
+    Поставить оценку товару
+  status: fail
+    
+- summary: |
+    Проверка корректной работы смены языка
+  status: pass
+        
+- summary: |
+    Проверка корректной работы на SPA
+  status: pass
+   
+- summary: |
+    При нажатие Hexlet Store возвращение на главную страницу 
+  status: pass
+    
+- summary: |
+    Успешная проверка кроссбраузерности Google Chrome
+  status: pass
+    
+- summary: |
+    Успешная проверка кроссбраузерности Mozila FireFox
+  status: pass
+    
+- summary: |
+    Успешная проверка кроссбраузерности Opera
+  status: pass
+    
+- summary: |
+    Успешная проверка кроссбраузерности Vivaldi
+  status: pass
+
+bugreports:
+  - summary: |
+      Вёрстка кнопки Delete в корзине на мобильном устройстве
+    environment: |
+      Яндекс старт 230906023 (Официальная сборка) Android 13; A225FXXU7DWH3
+    steps-to-reproduce: |
       1. Открыть на мобильном устройстве https://hexlet-products-store.vercel.app/ 
       2. Перейти в корзину
-expected-result: |
+     expected-result: |
+      Кнопки Delete и ровные 
+     actual-result: |
+      Кнопки Кнопки Delete неровные
+
+  - summary: |
+      Вёрстка кнопки Delete в корзине 
+    environment: |
+     Yandex browser 23.9.3.933 (Официальная сборка) (64-bit) Windows 113
+    steps-to-reproduce: |
+      1. Открыть на мобильном устройстве https://hexlet-products-store.vercel.app/ 
+      2. Перейти в корзину
+    expected-result: |
       Кнопки Delete и ровные 
     actual-result: |
       Кнопки Кнопки Delete неровные
