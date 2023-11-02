@@ -1,18 +1,33 @@
 ---
 - summary: |
-    Проверка добавления товара в корзину 
+    Проверка работы фильтрации товаров по 2 параметрам
   requirement: |
-    При нажатие Add to cart товар добавляется в корзину 
+    При использовании двух разних типов фильтрования появляются только товары соответствующие обоим выбранным параметрам
   prerequisites: |
-    Открыта главная страница магазина 
+    В браузере открыта страница https://hexlet-products-store.vercel.app/
   test-data: |
-    Конопка Add to cart = cart
+    Категория = laptops
+    Цена От = 1000
+    Цена До = 2000 
   steps:
-    - Открыть онлайн магазин
-    - Нажать Add to cart
-    - Нажать cart
+    - Выбираем категорию
+    - Выставляем цену От и До
   expected-result: |
-    Открывается раздел корзины с добавленным товаром 
+    В списке товаров отображаются только товары соответствующие выбранным критериям фильтрации
+
+- summary: |
+    Проверка фильтрации товаров по цене
+  requirement: |
+    При установке минимального и максимального значения цены отображаются товары, чья цена попадает в этот ценовой диапазон
+  prerequisites: |
+    В браузере открыта страница https://hexlet-products-store.vercel.app/
+  test-data: |
+    Цена From = 50
+    Цена To = 100
+  steps:
+    - Выставляем цену From To
+  expected-result: |
+    В списке товаров отображаются только товары c ценами в диапазоне From To
 
 - summary: |
     Проверка мобильного приложения 
@@ -21,14 +36,12 @@
   prerequisites: |
     Мобильное устройство с браузером 
   test-data: |
-    Not data 
+    empty 
   steps:
-    - Открыть онлайн магазин на мобильном устройстве 
+    - Переходим мобильном устройстве по ссылке https://hexlet-products-store.vercel.app/
     - Проскроллить сайт вниз 
-    - Нажать Add cart
-    - Открыть раздел Cart
   expected-result: |
-    Сайт открывается в мобильной версии
+    Страница загрузилась для мобильных устройств
 
 - summary: |
     Проверка поиска товара по ключевому слову  
@@ -63,24 +76,11 @@
   prerequisites: |
     Открыта главная страница магазина Hexlet Store
   test-data: |
-     Not data
+     empty
   steps:
     - Обзор каталога 
   expected-result: |
    На  главной странице отображается изображение товара, цена, цена со скидкой, название,описание.
-
-- summary: |
-    Проверка страницы товара  
-  requirement: |
-   На главной странице отображается информация о товаре
-  prerequisites: |
-    Открыта главная страница магазина Hexlet Store
-  test-data: |
-    Товар =  Black Motorbike
-  steps:
-    - Открыть страницу товара 
-  expected-result: |
-    В списке отображаются На странице присутствуют изображения товара, цена, цена со скидкой, название, описание и кнопка "Add to cart"
 
 - summary: |
    Проверка навигации переключения страницы вперёд 
@@ -89,7 +89,7 @@
   prerequisites: |
     Открыта главная страница магазина Hexlet Store
   test-data: |
-     Not data
+    empty
   steps:
     - Нажать next
   expected-result: |
@@ -102,13 +102,13 @@
   prerequisites: |
     Открыта главная страница магазина Hexlet Store
   test-data: |
-     Not data
+     empty
   steps:
     - Нажать previous 
   expected-result: |
    Открывается предыдущую страница каталога товаров
 
-   - summary: |
+- summary: |
    Проверка перевода шапки сайта на русский язык
   requirement: |
    Шапка сайта переводится на русский язык
@@ -121,16 +121,62 @@
   expected-result: |
   Шапка сайта переводится на русский язык 
 
-   - summary: |
-   Проверка перевода Category на русский язык
+- summary: |
+    Проверка кроссбраузерности Google Chrome
   requirement: |
-   Category  переводится на русский язык
+    Сайт корректно открывается в последней версии Google Chrome 
   prerequisites: |
-    Открыта главная страница магазина Hexlet Store
+    empty
   test-data: |
-     Language = Russian
+    Сайт = https://hexlet-products-store.vercel.app/
+    Google Chrome = Google Chrome Version 120.0.6099.4
   steps:
-    - Нажать Russian
+    - Открываем сайт в Google Chrome
+    - Проверяем внешний вид страницы
   expected-result: |
-   Category не переводится на русский язык 
+    Страница сайта адаптирована, текст не выходит за блоки
 
+- summary: |
+    Проверка кроссбраузерности Mozila Firefox
+  requirement: |
+    Сайт корректно открывается в последней версии Mozila Firefox
+  prerequisites: |
+    empty
+  test-data: |
+    Сайт = https://hexlet-products-store.vercel.app/
+    Mozila Firefox = Mozila Firefox 119.0
+  steps:
+    - Открываем сайт в Mozila Firefox
+    - Проверяем внешний вид страницы
+  expected-result: |
+    Страница сайта адаптирована, текст не выходит за блоки
+
+- summary: |
+    Проверка кроссбраузерности Vivaldi
+  requirement: |
+    Сайт корректно открывается в последней версии Vivaldi
+  prerequisites: |
+    empty
+  test-data: |
+    Сайт = https://hexlet-products-store.vercel.app/
+    Vivaldi = Vivaldi 6.4
+  steps:
+    - Открываем сайт в Vivaldi
+    - Проверяем внешний вид страницы
+  expected-result: |
+    Страница сайта адаптирована, текст не выходит за блоки 
+
+- summary: |
+    Проверка кроссбраузерности Opera
+  requirement: |
+    Сайт корректно открывается в последней версии Opera
+  prerequisites: |
+    empty
+  test-data: |
+    Сайт = https://hexlet-products-store.vercel.app/
+   Opera  = Opera 104.0.4944.36
+  steps:
+    - Открываем сайт в Opera
+    - Проверяем внешний вид страницы
+  expected-result: |
+    Страница сайта адаптирована, текст не выходит за блоки
