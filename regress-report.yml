@@ -9,7 +9,7 @@ test-cases:
     status: fail
  
   - summary: |
-      Есть мобильная версия главной страницы сайта 
+      Есть мобильная версия сайта
     status: pass
  
   - summary: |
@@ -25,18 +25,34 @@ test-cases:
     status: pass
   
   - summary: |
-      При нажатие Hexlet Store переходи на главную страницу 
+      При нажатие Hexlet Store возвращение на главную страницу 
     status: pass
+  
+  - summary: |
+      Проверка кроссбраузерности Google Chrome
+    status: pass
+
+    - summary: |
+      Проверка кроссбраузерности Mozila FireFox
+    status: pass
+
+    - summary: |
+      Проверка кроссбраузерности Opera
+    status: pass
+
+   - summary: |
+      Проверка кроссбраузерности Vivaldi
+      status: pass
 
 bugreports:
 - summary: |  
-   Неровная вёрстка в корзине мобильной версии
+   Вёрстка корзины 
   environment: |
     Яндекс старт 230906023 (Официальная сборка) Android 13; A225FXXU7DWH3
   steps-to-reproduce: |
     1. Открыть на мобильном устройстве https://hexlet-products-store.vercel.app/
     2. Перейти в корзину
   expected-result: |
-    Вёрстка цифр в кол-во товаров рованая
+   Кнопки Delete и ровные 
   actual-result: |
-    Верстка цифр кол-во товаров неровная
+   Кнопки Delete неровные
