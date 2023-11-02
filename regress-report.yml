@@ -1,5 +1,5 @@
 ---
-test-cases:
+  test-cases:
   - summary: |
       Проверка локализации
     status: fail
