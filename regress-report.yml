@@ -72,7 +72,7 @@ bugreports:
       1. Открыть на мобильном устройстве https://hexlet-products-store.vercel.app/ 
       2. Перейти в корзину
     expected-result: |
-      Кнопки Delete и ровные 
+      Кнопки Delete  ровные 
     actual-result: |
       Кнопки Кнопки Delete неровные
 
