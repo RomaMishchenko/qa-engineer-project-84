@@ -1,6 +1,6 @@
 test-cases:
 - summary: |
-     Проверка локализации 
+     Проверка локализации на русский хештеги категорий и размер скидки
   status: fail
 
 - summary: |
@@ -36,19 +36,19 @@ test-cases:
   status: pass
     
 - summary: |
-    Успешная проверка кроссбраузерности Google Chrome
+    Проверка отображения сайта в браузере Chrome
   status: pass
     
 - summary: |
-    Успешная проверка кроссбраузерности Mozila FireFox
+    Проверка  отображения сайта в браузере Mozila FireFox
   status: pass
     
 - summary: |
-    Успешная проверка кроссбраузерности Opera
+    Проверка  отображения сайта в браузере Opera LV
   status: pass
     
 - summary: |
-    Успешная проверка кроссбраузерности Vivaldi
+    Проверка отображения сайта в браузере Vivaldi
   status: pass
 
 bugreports:
